@@ -1,3 +1,3 @@
-# React Navigation Drawer example for React Native
+# React Navigation Drawer
 
-Here is a simple example of a custom Drawer from React Navigation.
+Here is a simple example of a custom Drawer from React Navigation for React Native.
