@@ -1,12 +1,12 @@
 import React, { Component } from "react";
-import { StyleSheet, Text, TouchableOpacity, View } from "react-native";
+import { Image, StyleSheet, Text, TouchableOpacity, View } from "react-native";
 
 import Icon from "react-native-vector-icons/MaterialIcons";
 
-class MainContainer extends Component {
+class HooliContainer extends Component {
   static navigationOptions = ({ navigation, screenProps }) => ({
-    drawerLabel: "Main",
-    title: "Main",
+    drawerLabel: "Hooli",
+    title: "Hooli",
     headerLeft: (
       <View style={{ paddingHorizontal: 10 }}>
         <TouchableOpacity onPress={() => navigation.navigate("DrawerOpen")}>
@@ -18,7 +18,7 @@ class MainContainer extends Component {
   render() {
     return (
       <View style={styles.container}>
-        <Text>I am the MainContainer component</Text>
+        <Image source={require("../assets/img/hooli.png")} />
       </View>
     );
   }
@@ -32,8 +32,8 @@ const styles = StyleSheet.create({
   }
 });
 
-MainContainer.defaultProps = {};
+HooliContainer.defaultProps = {};
 
-MainContainer.propTypes = {};
+HooliContainer.propTypes = {};
 
-export default MainContainer;
+export default HooliContainer;

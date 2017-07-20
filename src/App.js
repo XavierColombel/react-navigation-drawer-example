@@ -5,12 +5,12 @@ import { StackNavigator, DrawerNavigator } from "react-navigation";
 
 import DrawerMenu from "./containers/DrawerMenu";
 
-import MainContainer from "./containers/MainContainer";
-import SettingsContainer from "./containers/SettingsContainer";
+import PiedPiperContainer from "./containers/PiedPiperContainer";
+import HooliContainer from "./containers/HooliContainer";
 
 const MainScreenNavigator = StackNavigator({
-  Main: { screen: MainContainer },
-  Settings: { screen: SettingsContainer }
+  PiedPiper: { screen: PiedPiperContainer },
+  Hooli: { screen: HooliContainer }
 });
 
 const Drawer = DrawerNavigator(

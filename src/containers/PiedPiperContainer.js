@@ -1,12 +1,12 @@
 import React, { Component } from "react";
-import { StyleSheet, Text, TouchableOpacity, View } from "react-native";
+import { Image, StyleSheet, Text, TouchableOpacity, View } from "react-native";
 
 import Icon from "react-native-vector-icons/MaterialIcons";
 
-class SettingsContainer extends Component {
+class PiedPiperContainer extends Component {
   static navigationOptions = ({ navigation, screenProps }) => ({
-    drawerLabel: "Settings",
-    title: "Settings",
+    drawerLabel: "Pied Piper",
+    title: "Pied Piper",
     headerLeft: (
       <View style={{ paddingHorizontal: 10 }}>
         <TouchableOpacity onPress={() => navigation.navigate("DrawerOpen")}>
@@ -18,7 +18,7 @@ class SettingsContainer extends Component {
   render() {
     return (
       <View style={styles.container}>
-        <Text>I am the SettingsContainer component</Text>
+        <Image source={require("../assets/img/piedpiper.png")} />
       </View>
     );
   }
@@ -32,8 +32,8 @@ const styles = StyleSheet.create({
   }
 });
 
-SettingsContainer.defaultProps = {};
+PiedPiperContainer.defaultProps = {};
 
-SettingsContainer.propTypes = {};
+PiedPiperContainer.propTypes = {};
 
-export default SettingsContainer;
+export default PiedPiperContainer;

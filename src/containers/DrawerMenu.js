@@ -1,5 +1,11 @@
 import React, { Component } from "react";
-import { StyleSheet, Text, TouchableOpacity, View } from "react-native";
+import {
+  StatusBar,
+  StyleSheet,
+  Text,
+  TouchableOpacity,
+  View
+} from "react-native";
 
 import { NavigationActions } from "react-navigation";
 
@@ -17,15 +23,16 @@ class DrawerMenu extends Component {
       <View style={styles.container}>
         <TouchableOpacity
           style={styles.menuItem}
-          onPress={() => this._navigate("Main")}
+          onPress={() =>
+            this._navigate("PiedPiper", { isStatusBarHidden: false })}
         >
-          <Text style={styles.menuItemText}>Main</Text>
+          <Text style={styles.menuItemText}>Pied Piper</Text>
         </TouchableOpacity>
         <TouchableOpacity
           style={styles.menuItem}
-          onPress={() => this._navigate("Settings")}
+          onPress={() => this._navigate("Hooli", { isStatusBarHidden: false })}
         >
-          <Text style={styles.menuItemText}>Settings</Text>
+          <Text style={styles.menuItemText}>Hooli</Text>
         </TouchableOpacity>
       </View>
     );
